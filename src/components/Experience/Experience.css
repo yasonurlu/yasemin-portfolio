@@ -1,0 +1,156 @@
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 27px;
+
+  width: 1px;
+
+  background: rgba(50, 29, 18, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 55px 1fr;
+
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.timeline-marker {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.timeline-marker span {
+  display: grid;
+
+  width: 55px;
+  height: 55px;
+
+  place-items: center;
+
+  background: var(--olive);
+  color: var(--cream);
+
+  border-radius: 50%;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.timeline-card {
+  padding: 34px;
+
+  background: var(--sand);
+
+  border: 1px solid rgba(50, 29, 18, 0.1);
+  border-radius: var(--radius);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 14px 35px rgba(50, 29, 18, 0.08);
+}
+
+.timeline-head {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 25px;
+}
+
+.timeline-card h3 {
+  margin: 0 0 5px;
+
+  font-family: var(--display);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.timeline-org {
+  margin: 0;
+
+  color: var(--burgundy);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.timeline-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 4px;
+
+  color: var(--brown-soft);
+
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+.timeline-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.timeline-card li {
+  margin-bottom: 9px;
+
+  color: var(--brown-soft);
+
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 700px) {
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    display: block;
+  }
+
+  .timeline-marker {
+    justify-content: flex-start;
+
+    margin-bottom: 12px;
+  }
+
+  .timeline-card {
+    padding: 26px;
+  }
+
+  .timeline-head {
+    flex-direction: column;
+  }
+
+  .timeline-meta {
+    align-items: flex-start;
+
+    text-align: left;
+  }
+}

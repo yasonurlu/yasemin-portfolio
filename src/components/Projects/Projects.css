@@ -1,0 +1,366 @@
+.project-section-head {
+  margin-bottom: 45px;
+}
+
+/* Carousel */
+.project-carousel {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: visible;
+  user-select: none;
+}
+
+/* Individual cards */
+.project-slot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: min(570px, 50vw);
+  height: 500px;
+
+  padding: 38px;
+
+  border: 1px solid rgba(50, 29, 18, 0.12);
+  border-radius: 28px;
+
+  box-shadow: 0 20px 50px rgba(50, 29, 18, 0.1);
+
+  display: flex;
+  flex-direction: column;
+
+  transform-origin: center;
+
+  transition:
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.65s ease,
+    filter 0.65s ease;
+
+  overflow: hidden;
+}
+
+/* Card positions */
+.project-slot--active {
+  z-index: 3;
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.project-slot--left {
+  z-index: 1;
+  opacity: 0.65;
+  filter: saturate(0.75);
+  transform: translateX(-112%) scale(0.84) rotate(-4deg);
+}
+
+.project-slot--right {
+  z-index: 1;
+  opacity: 0.65;
+  filter: saturate(0.75);
+  transform: translateX(12%) scale(0.84) rotate(4deg);
+}
+
+/* CARD COLORS */
+
+.project-card--sand {
+  background: #dfd6a4;
+  color: #321d12;
+}
+
+.project-card--peach {
+  background: #e1b4a1;
+  color: #321d12;
+}
+
+.project-card--olive {
+  background: #808249;
+  color: #f3eed7;
+}
+
+.project-card--burgundy {
+  background: #a15d66;
+  color: #f3eed7;
+}
+
+/* CARD CONTENT */
+
+.project-number {
+  font-family: "Fraunces", serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.55;
+  margin-bottom: 28px;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  min-width: 0;
+}
+
+.project-title-row h3 {
+  margin: 0;
+
+  min-width: 0;
+
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.project-link {
+  flex-shrink: 0;
+
+  margin-top: 5px;
+
+  color: inherit;
+  text-decoration: none;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+
+  white-space: nowrap;
+
+  opacity: 0.75;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.project-stack {
+  margin: 13px 0 24px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+
+  opacity: 0.65;
+}
+
+.project-desc {
+  margin: 0 0 22px;
+
+  max-width: 470px;
+
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.project-slot ul {
+  margin: 0;
+  padding-left: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.project-slot li::marker {
+  opacity: 0.5;
+}
+
+/* CARD FOOTER */
+
+.project-card-footer {
+  position: absolute;
+
+  left: 38px;
+  right: 38px;
+  bottom: 28px;
+
+  padding-top: 17px;
+
+  border-top: 1px solid currentColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: inherit;
+  text-decoration: none;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  opacity: 0.7;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-card-footer:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* CONTROLS*/
+
+.project-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  margin-top: 5px;
+}
+
+/* Arrow buttons */
+
+.carousel-arrow {
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid rgba(50, 29, 18, 0.2);
+  border-radius: 50%;
+
+  background: #f3eed7;
+  color: #321d12;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: #321d12;
+  color: #f3eed7;
+  border-color: #321d12;
+  transform: translateY(-2px);
+}
+
+.carousel-arrow:active {
+  transform: translateY(0);
+}
+
+/* Dots */
+
+.project-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-dots button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #dfd6a4;
+  cursor: pointer;
+  transition:
+    width 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-dots button:hover {
+  transform: scale(1.25);
+}
+
+.project-dots button.active {
+  width: 24px;
+  border-radius: 10px;
+  background: #a15d66;
+}
+
+/* Hint */
+
+.carousel-hint {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: #321d12;
+  opacity: 0.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .project-slot {
+    width: min(520px, 62vw);
+  }
+
+  .project-slot--left {
+    transform: translateX(-105%) scale(0.82) rotate(-3deg);
+  }
+
+  .project-slot--right {
+    transform: translateX(5%) scale(0.82) rotate(3deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .project-carousel {
+    height: 530px;
+  }
+
+  .project-slot {
+    width: 100%;
+    height: 500px;
+
+    padding: 30px;
+
+    left: 50%;
+  }
+
+  .project-slot--left,
+  .project-slot--right {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .project-slot--active {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .project-title-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-link {
+    align-self: flex-start;
+  }
+
+  .project-card-footer {
+    left: 30px;
+    right: 30px;
+  }
+
+  .project-controls {
+    margin-top: 0;
+  }
+}
