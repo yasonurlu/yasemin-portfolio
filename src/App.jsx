@@ -8,11 +8,13 @@ import Leadership from "./components/Leadership/Leadership";
 import Interests from "./components/Interests/Interests";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
+import ScrollReveal from "./components/ScrollReveal/ScrollReveal";
 
 export default function App() {
   return (
     <div className="page">
       <Navbar />
+      <ScrollReveal />
 
       <main>
         <Hero />

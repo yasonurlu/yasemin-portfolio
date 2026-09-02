@@ -52,7 +52,30 @@ button {
 /* ---------------- SHARED SECTIONS ---------------- */
 
 .section {
-  padding: 125px 24px;
+  padding: 50px 24px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 .section-inner {
@@ -97,7 +120,7 @@ button {
   line-height: 1.6;
 }
 
-/* ---------------- SHARED BUTTONS ---------------- */
+/*  SHARED BUTTONS  */
 
 .btn {
   display: inline-flex;
@@ -140,7 +163,7 @@ button {
   background: var(--sand);
 }
 
-/* ---------------- RESPONSIVE GLOBAL ---------------- */
+/*  RESPONSIVE GLOBAL  */
 
 @media (max-width: 700px) {
   .section {
