@@ -15,7 +15,6 @@ export default function App() {
     <div className="page">
       <Navbar />
       <ScrollReveal />
-
       <main>
         <Hero />
         <About />
@@ -23,8 +22,8 @@ export default function App() {
         <Projects />
         <Education />
         <Leadership />
-        <Interests />
         <Skills />
+        <Interests />
         <Contact />
       </main>
 
