@@ -8,7 +8,7 @@ export const roles = [
 export const experience = [
   {
     org: "ForInvest",
-    role: "Software Engineering Intern",
+    role: "Android Engineering Intern",
     place: "Istanbul, Turkey",
     time: "June – July 2026",
     bullets: [
