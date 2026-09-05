@@ -6,7 +6,7 @@ export default function Skills() {
     <section id="skills" className="section">
       <div className="section-inner">
         <div className="section-head">
-          <span className="section-tag">07 · Skills</span>
+          <span className="section-tag">06 · Skills</span>
           <h2>My toolkit.</h2>
         </div>
 

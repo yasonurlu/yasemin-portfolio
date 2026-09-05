@@ -6,7 +6,7 @@ export default function Interests() {
     <section id="interests" className="section section--tint">
       <div className="section-inner">
         <div className="section-head">
-          <span className="section-tag">06 · Outside the code</span>
+          <span className="section-tag">07 · Outside the code</span>
           <h2>Things I find interesting.</h2>
         </div>
 
