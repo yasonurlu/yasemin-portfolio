@@ -35,6 +35,6 @@ src/
 ```
 
 - GitHub: [@yasonurlu](https://github.com/yasonurlu)
-- Linkedin: [@yaseminnurluoglu]((https://www.linkedin.com/in/yasemin-nurluoglu/))
+- Linkedin: [@yaseminnurluoglu](https://www.linkedin.com/in/yasemin-nurluoglu/)
 
 <!-- Add LinkedIn / email here -->
