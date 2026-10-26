@@ -12,7 +12,9 @@
 
   border-radius: 30px;
 }
-
+.leadership-feature + .leadership-feature {
+  margin-top: 2rem;
+}
 .leadership-side {
   display: flex;
   flex-direction: column;

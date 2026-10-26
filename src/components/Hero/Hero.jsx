@@ -37,9 +37,11 @@ export default function Hero() {
           </div>
 
           <p className="hero-desc">
-            Computer scientist and mathematician building products, systems, and
-            financial technology. I like difficult problems, thoughtful
-            interfaces, and understanding how things work underneath.
+            Computer science and mathematics graduate pursuing Financial
+            Technology at UCL. Interested in the intersection of software
+            engineering, quantitative thinking, and finance, with a passion for
+            understanding complex problems and turning ideas into practical,
+            well-designed solutions.
           </p>
 
           <div className="hero-meta">

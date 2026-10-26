@@ -7,7 +7,6 @@ const links = [
   ["projects", "Projects"],
   ["education", "Education"],
   ["leadership", "Leadership"],
-  ["interests", "Interests"],
 ];
 
 export default function Navbar() {

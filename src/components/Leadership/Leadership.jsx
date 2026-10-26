@@ -12,7 +12,39 @@ export default function Leadership() {
         <div className="leadership-feature">
           <div className="leadership-side">
             <span className="leadership-symbol">∿</span>
-            <span>2022 — 2026</span>
+            <span>2026 — 2027</span>
+          </div>
+
+          <div className="leadership-content">
+            <p className="leadership-kicker">UCL</p>
+
+            <h3>FinTech Student Representative</h3>
+
+            <p>
+              Elected by my peers to represent the academic interests of
+              students on UCL's Financial Technology MSc, acting as a student
+              voice and a bridge between the cohort and department staff.
+            </p>
+
+            <p>
+              Proactively gather student feedback on teaching, coursework,
+              programme structure, and the wider learning experience, ensuring
+              concerns and suggestions are communicated clearly to relevant
+              staff and academic committees.
+            </p>
+
+            <p>
+              Work collaboratively with students and faculty to champion
+              constructive change, contribute to programme development, and keep
+              classmates informed about ongoing discussions, progress, and
+              improvements.
+            </p>
+          </div>
+        </div>
+        <div className="leadership-feature">
+          <div className="leadership-side">
+            <span className="leadership-symbol">∿</span>
+            <span>2025 — 2026</span>
           </div>
 
           <div className="leadership-content">
@@ -24,8 +56,8 @@ export default function Leadership() {
 
             <p>
               Led a seven-member executive board supporting 30+ members,
-              directing programming, operations, and strategic initiatives
-              around women's participation in STEM.
+              directing programming, operations, and strategic initiatives to
+              promote women's participation in STEM.
             </p>
 
             <p>

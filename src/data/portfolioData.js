@@ -1,8 +1,8 @@
 export const roles = [
   "Software Engineer",
   "FinTech Builder",
-  "Computer Scientist",
-  "Mathematician",
+  "Coder",
+  "Math Nerd",
 ];
 
 export const experience = [
@@ -40,14 +40,14 @@ export const experience = [
     ],
   },
   {
-    org: "Istanbul Portfoy",
+    org: "Istanbul Portföy",
     role: "Financial Analyst Intern",
     place: "Istanbul, Turkey",
     time: "Dec 2024 – Jan 2025",
     bullets: [
-      "Analyzed investment portfolios, evaluating asset allocation, risk exposure, and performance.",
-      "Monitored market trends through Bloomberg Terminal, supporting a team handling 100M+ in daily transactions.",
-      "Assessed financials of companies with 500M+ in annual revenue to support investment strategy.",
+      "Shadowed portfolio analysts to learn how asset allocation, risk exposure, and performance reviews are handled day to day.",
+      "Joined daily market monitoring on the Bloomberg Terminal with a team managing 100M+ TRY in daily transactions.",
+      "Reviewed financial statements of companies with 500M+ TRY in annual revenue, and saw how that analysis shaped investment decisions.",
     ],
   },
 ];
@@ -67,20 +67,20 @@ export const projects = [
       "API retry with exponential backoff and typed async interfaces covered by pytest.",
     ],
   },
-  {
-    name: "Portfolio Tracker",
-    stack: "Python · FastAPI · React · SQLite",
-    tone: "peach",
-    url: "https://github.com/yasonurlu/portfolio-tracker",
-    linkText: "View on GitHub ↗",
-    description:
-      "A full-stack portfolio tracking application for monitoring investments, market data, and portfolio performance.",
-    points: [
-      "Built a REST API for portfolio and market data management.",
-      "Connected financial data to a responsive frontend for portfolio insights.",
-      "Designed the application around modular backend services and persistent storage.",
-    ],
-  },
+  // {
+  //   name: "Portfolio Tracker",
+  //   stack: "Python · FastAPI · React · SQLite",
+  //   tone: "peach",
+  //   url: "https://github.com/yasonurlu/portfolio-tracker",
+  //   linkText: "View on GitHub ↗",
+  //   description:
+  //     "A full-stack portfolio tracking application for monitoring investments, market data, and portfolio performance.",
+  //   points: [
+  //     "Built a REST API for portfolio and market data management.",
+  //     "Connected financial data to a responsive frontend for portfolio insights.",
+  //     "Designed the application around modular backend services and persistent storage.",
+  //   ],
+  // },
   {
     name: "HobbyHabit",
     stack: "Kotlin · Jetpack Compose · MVVM",
@@ -102,7 +102,7 @@ export const projects = [
     url: "https://sanvia.app/",
     linkText: "Visit Sanvia ↗",
     description:
-      "An AI-powered health application where I built responsive product interfaces as part of a small, fast-moving team.",
+      "An AI-powered health app where I built the core product interfaces, from the landing page to the AI chat.",
     points: [
       "Built core interfaces including the landing page, profile, and AI chat.",
       "Integrated OpenAI and Firebase APIs into a responsive frontend experience.",
@@ -153,12 +153,12 @@ export const interests = [
   {
     symbol: "∑",
     title: "Mathematics",
-    text: "I genuinely enjoy the logic behind mathematical problems and the way mathematical thinking translates into better software.",
+    text: "I enjoy the logic behind a good proof, and I've found that mathematical thinking makes me a better engineer.",
   },
   {
     symbol: "✈",
     title: "Travel",
-    text: "I love exploring new cities, especially places with strong art, history, architecture, and completely different everyday rhythms.",
+    text: "I love exploring new cities, especially ones with strong art, history, and architecture.",
   },
   {
     symbol: "⌁",
@@ -168,11 +168,6 @@ export const interests = [
   {
     symbol: "◌",
     title: "Arts & History",
-    text: "Museums, exhibitions, theatre, and history are a big part of how I spend time outside of tech.",
-  },
-  {
-    symbol: "↗",
-    title: "Financial Technology",
-    text: "I'm especially interested in the systems underneath markets: data, infrastructure, quantitative thinking, and financial products.",
+    text: "Museums, exhibitions, and theatre are a big part of how I spend time outside of tech.",
   },
 ];
