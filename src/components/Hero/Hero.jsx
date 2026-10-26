@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { roles } from "../../data/portfolioData";
 import "./Hero.css";
-import yaseminPhoto from "../../components/assets/yaso.jpg";
-
+import yaseminPhoto from "../Assets/yaso.jpg";
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
 
