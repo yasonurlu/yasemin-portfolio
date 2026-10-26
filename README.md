@@ -1,16 +1,40 @@
-# React + Vite
+# Yasemin Nurluoglu — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website, built with React. It covers my experience, projects, education, leadership, and skills.
 
-Currently, two official plugins are available:
+**Live site:** https://yasemin-portfolio.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+- React (function components and hooks)
+- Vite
+- Plain CSS, with one stylesheet per component
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Rotating role text in the hero section
+- Auto-playing project carousel with arrow and dot controls that pauses on hover
+- Experience timeline
+- All content kept in a single data file, so updates don't touch the components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project structure
+
+```
+src/
+├── components/
+│   ├── Hero/          # Intro, rotating roles, photo
+│   ├── About/
+│   ├── Experience/    # Timeline, rendered from data
+│   ├── Projects/      # Carousel, rendered from data
+│   ├── Education/
+│   ├── Leadership/
+│   ├── Skills/        # Rendered from data
+│   └── assets/        # Images
+└── data/
+    └── portfolioData.js   # Roles, experience, projects, skills, interests
+```
+
+- GitHub: [@yasonurlu](https://github.com/yasonurlu)
+- Linkedin: [@yaseminnurluoglu]((https://www.linkedin.com/in/yasemin-nurluoglu/))
+
+<!-- Add LinkedIn / email here -->
